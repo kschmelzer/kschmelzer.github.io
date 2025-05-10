@@ -1,9 +1,11 @@
 :root {
-  --primary-color: #2563eb;    /* Modern blue */
-  --secondary-color: #4f46e5;  /* Purple accent */
-  --accent-color: #10b981;     /* Green accent */
-  --neutral-color: #f8fafc;    /* Light gray */
-  --dark-color: #1e293b;       /* Dark blue-gray */
+  --primary-color: #2d3436;    /* Dark slate */
+  --secondary-color: #636e72;  /* Medium gray */
+  --accent-color: #9c92ac;     /* Light gray for accents */
+  --neutral-color: #f8fafc;    /* Off-white background */
+  --dark-color: #1a1a1a;       /* Deep black for text */
+  --primary-gradient: #1a365d; /* Dark blue */
+  --secondary-gradient: #26af4f; /* Green accent */
 }
 
 *,::before,::after {
@@ -42,20 +44,20 @@ body {
 
 #welcome-section {
   height: 50vh;
-  background: linear-gradient(45deg, #6c7ae9, #8b5cf6);
+  background: linear-gradient(45deg, var(--primary-gradient), var(--secondary-gradient));
   text-align: center;
 }
 
 #my-name {
   color: white;
-  font-size: 4rem;
+  font-size: clamp(2rem, 5vw, 4rem);
   margin-top: 200px;
   margin-bottom: 50px;
 }
 
 #my-desc {
   color: rgba(255, 255, 255, 0.9);
-  font-size: 1.75rem;
+  font-size: clamp(1.5rem, 3vw, 2rem);
 }
 
 #projects {
@@ -95,7 +97,7 @@ body {
 #contact {
   height: 100vh;
   text-align: center;
-  background-color: #f8fafc;
+  background-color: var(--neutral-color);
   padding: 4rem 0;
 }
 
