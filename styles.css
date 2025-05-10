@@ -49,14 +49,15 @@ body {
 #welcome-section {
   height: calc(100vh - 60px); /* Adjust for navbar height */
   min-height: 100%;
-  background: linear-gradient(45deg, var(--primary-gradient), var(--secondary-gradient));
   text-align: center;
+  background: linear-gradient(45deg, var(--primary-gradient), var(--secondary-gradient));
+  padding-top: 200px; /* Added this to create space at the top */
 }
 
 #my-name {
   color: white;
   font-size: clamp(2rem, 5vw, 4rem);
-  margin-top: 200px;
+  margin-top: 0; /* Removed the margin that was pushing it down */
   margin-bottom: 50px;
 }
 
