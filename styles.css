@@ -1,7 +1,7 @@
 :root {
-  --back-color: #505050;
-  --text-color: #eee;
-  --project-back-color: rgb(99, 90, 87);
+  --back-color: #f0f4f8;
+  --text-color: #2d3436;
+  --project-back-color: #1a73e8;
 }
 
 *,::before,::after {
@@ -9,7 +9,7 @@
 }
 
 body {
-  background: linear-gradient(var(--back-color), #0f0f0f55, var(--back-color));
+  background: linear-gradient(var(--back-color), var(--back-color));
   height: 100vh;
   width: 100%;
   margin: auto auto;
@@ -25,9 +25,8 @@ body {
   flex-direction: row;
   justify-content: flex-end;
   width: 100%;
-  border-bottom: 1px solid #eee; 
-  /* background: linear-gradient(var(--back-color), #0f0f0f55, var(--back-color));; */
-  background: linear-gradient(var(--back-color), #0f0f0f, var(--back-color));
+  border-bottom: 1px solid #e7f3ff;
+  background: linear-gradient(var(--back-color), var(--back-color));
   z-index: 1;
 }
 
@@ -46,13 +45,14 @@ body {
 }
 
 #welcome-section {
-  /* border: 2px solid; */
   height: 50vh;
+  background: radial-gradient(circle at center,
+    rgba(96, 148, 233, 0.1) 0%,
+    rgba(96, 148, 233, 0.2) 100%);
   text-align: center;
 }
 
 #my-name {
-  /* border: 2px solid; */
   margin-top: 200px;
   margin-bottom: 50px;
   font-size: 4rem;
@@ -70,8 +70,6 @@ body {
 }
 
 #project-grid {
-  /* border: 5px solid; */
-  /* width: 100%; */
   display: grid;
   height: 100%;
   grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
@@ -103,11 +101,10 @@ body {
 
 #project-title {
   font-size: 4rem;
+  color: #fff;
 }
 
 #contact {
-  /* border: 2px solid; */
-  
   height: 100vh;
   text-align: center;
   
@@ -118,12 +115,9 @@ body {
 }
 
 #call-to-contact {
-  /* border: 2px solid; */
   margin: 0 auto;
   margin-top: 75px;
   margin-bottom: 25px;
-  /* padding-top: 100px; */
-  /* height: 100%; */
   font-size: 2.5rem;
   text-align: center;
 }
@@ -140,16 +134,16 @@ body {
   align-items: center;
   width: 100%;
   max-width: 1000px;
-  /* border: 2px solid; */
 }
 
 .contact-link a {
-  color: var(--text-color);
+  color: #2d3436;
   font-size: 1.3rem;
   text-decoration: none;
   padding: 2rem 10rem;
   width: 100%;
-  /* margin: auto 20px; */
+  border-color: #e7f3ff;
+  transition: all 0.3s ease;
 }
 
 .footer {
