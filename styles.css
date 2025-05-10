@@ -17,11 +17,15 @@ body {
   color: var(--dark-color);
   height: 100vh;
   width: 100%;
-  margin: auto;
+  margin: 0;
   padding: 0;
 }
 
 #navbar {
+  position: fixed;
+  top: 0;
+  z-index: 100;
+  width: 100%;
   background-color: rgba(255, 255, 255, 0.95);
   border-bottom: 1px solid #e2e8f0;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
@@ -30,10 +34,10 @@ body {
 #navbar ul {
   list-style: none;
   display: flex;
-  justify-content: space-evenly;
+  justify-content: flex-end; /* Changed from space-evenly */
   padding: 0 2rem;
 }
-
+  
 #navbar a {
   color: var(--dark-color);
   text-decoration: none;
@@ -41,9 +45,10 @@ body {
   font-size: 1.1rem;
   transition: all 0.3s ease;
 }
-
+  
 #welcome-section {
-  height: 50vh;
+  height: calc(100vh - 60px); /* Adjust for navbar height */
+  min-height: 100%;
   background: linear-gradient(45deg, var(--primary-gradient), var(--secondary-gradient));
   text-align: center;
 }
@@ -142,6 +147,10 @@ body {
 }
 
 @media only screen and (max-width: 768px) {
+  #navbar ul {
+    justify-content: flex-end; /* Added for mobile view */
+  }
+  
   #contact-links {
     flex-direction: column;
   }
