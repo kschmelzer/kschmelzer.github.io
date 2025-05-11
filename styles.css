@@ -26,6 +26,7 @@ body {
   top: 0;
   z-index: 100;
   width: 100%;
+  height: 60px; /* Set to 60px */
   background-color: rgba(255, 255, 255, 0.95);
   border-bottom: 1px solid #e2e8f0;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
@@ -36,6 +37,7 @@ body {
   display: flex;
   justify-content: flex-end; /* Changed from space-evenly */
   padding: 0 2rem;
+  height: 100%; /* Added to fill navbar height */
 }
   
 #navbar a {
@@ -47,31 +49,31 @@ body {
 }
   
 #welcome-section {
-  height: calc(100vh - 60px); /* Adjust for navbar height */
+  height: 100vh;
   min-height: 100%;
   text-align: center;
   background: linear-gradient(45deg, var(--primary-gradient), var(--secondary-gradient));
-  padding-top: 200px; /* Added this to create space at the top */
+  padding-top: 200px; /* Added to prevent content from being hidden behind navbar */
 }
 
 #my-name {
   color: white;
   font-size: clamp(2rem, 5vw, 4rem);
-  margin-top: 0; /* Removed the margin that was pushing it down */
+  margin-top: 0;
   margin-bottom: 50px;
 }
 
 #my-desc {
   color: rgba(255, 255, 255, 0.9);
   font-size: clamp(1.5rem, 3vw, 2rem);
-  margin-bottom: 20px; /* Add this to create space below my-desc */
+  margin-bottom: 20px; /* Added space below description */
 }
 
 #projects {
+  min-height: 100vh;
   text-align: center;
-  padding: 0 10rem;
-  padding-bottom: 4rem;
-  background: linear-gradient(45deg, var(--primary-gradient), var(--secondary-gradient)); /* Match welcome-section's gradient */
+  padding: 4rem 10rem;
+  background: linear-gradient(45deg, var(--secondary-gradient), var(--primary-gradient)); /* Switched gradient colors */
   color: white;
 }
 
@@ -79,8 +81,7 @@ body {
   display: grid;
   height: 100%;
   grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-  margin: 0 auto;
-  margin-top: 4rem;
+  margin: 4rem auto;
   gap: 2rem;
   max-width: 1280px;
 }
@@ -112,7 +113,6 @@ body {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-
 }
 
 #call-to-contact {
@@ -135,7 +135,6 @@ body {
   width: 100%;
   max-width: 1280px;
   gap: 2rem;
-  margin-top: 3rem;
 }
 
 .contact-link a {
