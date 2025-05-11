@@ -6,6 +6,7 @@
   --dark-color: #1a1a1a;       /* Deep black for text */
   --primary-gradient: #1a365d; /* Dark blue */
   --secondary-gradient: #26af4f; /* Green accent */
+  --footer-height: 60px;      /* Added footer height variable */
 }
 
 *,::before,::after {
@@ -49,11 +50,10 @@ body {
 }
   
 #welcome-section {
-  height: 100vh;
-  min-height: 100%;
+  height: 100vh; 
   text-align: center;
   background: linear-gradient(45deg, var(--primary-gradient), var(--secondary-gradient));
-  padding-top: 200px; /* Added to prevent content from being hidden behind navbar */
+  padding-top: 200px; 
 }
 
 #my-name {
@@ -66,7 +66,7 @@ body {
 #my-desc {
   color: rgba(255, 255, 255, 0.9);
   font-size: clamp(1.5rem, 3vw, 2rem);
-  margin-bottom: 20px; /* Added space below description */
+  margin-bottom: 20px; 
 }
 
 #projects {
@@ -100,11 +100,11 @@ body {
 #project-title {
   font-size: 4rem;
   margin-bottom: 2rem;
-  color: var(--secondary-color);
+  color: var(--neutral-color); 
 }
 
 #contact {
-  height: 100vh;
+  height: calc(100vh - var(--footer-height)); /* Subtract footer height from viewport height */
   text-align: center;
   background-color: var(--neutral-color);
   padding: 4rem 0;
@@ -152,6 +152,11 @@ body {
   align-items: center;
   padding: 1rem 0;
   background-color: var(--neutral-color);
+  height: var(--footer-height); /* Use the new variable for footer height */
+}
+
+.footer span {
+  padding-right: 15px; 
 }
 
 @media only screen and (max-width: 768px) {
