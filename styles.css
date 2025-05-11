@@ -64,12 +64,14 @@ body {
 #my-desc {
   color: rgba(255, 255, 255, 0.9);
   font-size: clamp(1.5rem, 3vw, 2rem);
+  margin-bottom: 20px; /* Add this to create space below my-desc */
 }
 
 #projects {
   text-align: center;
-  padding: 4rem 10rem;
-  background-color: var(--primary-color);
+  padding: 0 10rem;
+  padding-bottom: 4rem;
+  background: linear-gradient(45deg, var(--primary-gradient), var(--secondary-gradient)); /* Match welcome-section's gradient */
   color: white;
 }
 
