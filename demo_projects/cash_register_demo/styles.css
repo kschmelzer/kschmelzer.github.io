@@ -52,7 +52,6 @@
   }
   
   .cash-register-container {
-    border: 3px dotted white;
     margin: 50px;
     display: flex;
     flex-direction:column;
