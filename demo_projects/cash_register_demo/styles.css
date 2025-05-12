@@ -1,0 +1,137 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    background-color: #6F6F6E;
+  }
+  
+  main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-top: 35px;
+  }
+  
+  h1,h2 {
+    margin-bottom: 25px;
+  }
+  
+  #change-due {
+    margin-bottom: 25px;
+    font-size: 1.4rem;
+  }
+  
+  .input-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  label {
+    margin-bottom: 15px;
+    font-size: 1.2rem;
+    font-weight: bold;
+  }
+  
+  input {
+    margin-bottom: 15px;
+    font-size: 1.2rem;
+  }
+  
+  .btn {
+    background-color: #FBC02D;
+    border: 2px solid #F9A825;
+    width: 100px;
+    /* height: 25px; */
+    font-size: 1.2rem;
+  }
+  
+  .cash-register-container {
+    border: 3px dotted white;
+    margin: 50px;
+    display: flex;
+    flex-direction:column;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .register-display-container {
+    width: 325px;
+  }
+  
+  .cash-register-display {
+    font-size: 1.2rem;
+    font-weight: bolder;
+    border: 10px solid tan;
+    padding: 5px 35px;
+    /* height: 50px; */
+    
+    text-align: center;
+    color: #4CAF50;
+    background-color: black;
+    margin: auto auto;
+  }
+  
+  .display-arm {
+    background-color: tan;
+    width: 40px;
+    height: 40px;
+    margin-left: 45px;
+  }
+  
+  .cash-register-body {
+    background-color: tan;
+    height: 250px;
+    width: 325px;
+    display: flex;
+    justify-content: space-around;
+    padding: 15px;
+    border-top-left-radius: 25px;
+    border-top-right-radius: 25px;
+  }
+  
+  .register-contents {
+    background-color: green;
+    width: 50%;
+    height: 95%;
+    padding: 4px;
+  }
+  
+  .register-contents>p {
+    margin: 2px;
+  }
+  
+  .faux-btn-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    width: 30%;
+    height: 45%;
+  }
+  
+  .faux-btn {
+    background-color: #424242;
+    width: 15px;
+    height: 15px;
+    margin: 5px;
+  }
+  
+  .cash-drawer {
+    background-color: tan;
+    width: 325px;
+    height: 40px;
+    margin-top: 5px;
+  }
+  
+  .drawer-lock {
+    border-radius: 50%;
+    width: 15px;
+    height: 15px;
+    background-image: linear-gradient(silver, #ffffff);
+    margin: 15px auto;
+  }

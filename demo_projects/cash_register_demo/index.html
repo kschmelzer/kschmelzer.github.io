@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang='en'>
+  <head>
+    <title>Schmelzer's Cash Register</title>
+    <meta charset='utf-8'/>
+    <link rel='stylesheet' href='./styles.css'/>
+  </head>
+  <body>
+    <main>
+      <h2>Schmelzer's</h2>
+      <h1>Cash Register Prototype</h1>
+      <div id='change-due'>
+        <p>Status: OPEN</p>
+      </div>
+      <div class='input-container'>
+        <label for='cash'>Cash from customer:</label>
+        <input id='cash' type='number' step='.01'/>
+        <button id='purchase-btn' class='btn'>Purchase</button>
+      </div>
+      <div class='cash-register-container'>
+        <div class='register-display-container'>
+          <code id='cash-register-display' class='cash-register-display'></code>
+          <div class='display-arm'>
+          </div>
+        </div>
+        <div class='cash-register-body'>
+          <div id='register-contents' class='register-contents'></div>
+          <div class='faux-btn-container'>
+            <div class='faux-btn'></div>
+            <div class='faux-btn'></div>
+            <div class='faux-btn'></div>
+            <div class='faux-btn'></div>
+            <div class='faux-btn'></div>
+            <div class='faux-btn'></div>
+            <div class='faux-btn'></div>
+            <div class='faux-btn'></div>
+            <div class='faux-btn'></div>
+            <div class='faux-btn'></div>
+          </div>  
+          
+        </div>
+        
+        <div class='cash-drawer'>
+          <div class='drawer-lock'>
+          </div>
+        </div>
+      </div>
+    </main>
+
+
+    <script src='./script.js'></script>
+  </body>
+</html
