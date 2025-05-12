@@ -63,10 +63,17 @@ body {
   margin-bottom: 50px;
 }
 
-#my-desc {
+#my-tagline {
   color: rgba(255, 255, 255, 0.9);
   font-size: clamp(1.5rem, 3vw, 2rem);
   margin-bottom: 20px; 
+}
+
+#my-description {
+  color: rgba(255, 255, 255, 0.8);
+  font-size: clamp(1.2rem, 2vw, 1.4rem);
+  text-align: center;
+  margin: 1rem 0;
 }
 
 #projects {
@@ -113,8 +120,8 @@ body {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-}
-
+  }
+  
 #call-to-contact {
   font-size: 3rem;
   margin-bottom: 2rem;
